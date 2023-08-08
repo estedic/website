@@ -1,0 +1,83 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.wrapper {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  width: 100%;
+  /*left: 500px;*/
+  color: white;
+  /*font-size: 10px;*/
+  /*margin: 20px;*/
+  /*H1: 10%;*/
+}
+
+.ml4 {
+  position: relative;
+  font-weight: 750;
+  font-size: 4.5em;
+}
+
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0;
+}
+
+a {
+  color: var(--bs-body-color);
+}
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 2,5;
+}
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+
+@media (min-width: 300px) {
+  #blocktext {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #blocktext {
+    font-size: 46px;
+  }
+}
+
+.getstartedtop {
+  background-color: #1C6CE8 !important;
+}
+
+#getstartedcta {
+  background-color: #1c6ce8 !important;
+}
+
+#usecases {
+  font-weight: 750;
+  padding-top: 5%;
+  font-size: 72px;
+}
+
+#company {
+  font-size: 72px;
+  font-weight: 750;
+  padding-top: 5%;
+}
+

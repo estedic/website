@@ -1,0 +1,101 @@
+.blockquote-footer::before {
+  content: " "!important;
+}
+
+img {
+  horizontal-align: center!important;
+  align-items: center;
+}
+
+@media (min-width: 1400px) {
+  .col-xxl-4 {
+    width: 50%!important;
+    flex: 0 0 auto !important;
+  }
+}
+
+#outputServicesDiv {
+  color: white!important;
+  font-size: 65px;
+  background-color: inherit;
+  border: none;
+  font-weight: 750;
+  padding-top: 7%;
+  font-family: inherit;
+  /*visibility: cubic-bezier(1,1,1.0,0);*/
+  /*animation: fadeOut 2s forwards;*/
+  /*animation-delay: 5s;*/
+  /*transition: opacity 1s ease;*/
+}
+
+#outputIndustriesDiv {
+  color: white!important;
+  font-size: 65px;
+  background-color: inherit;
+  border: none;
+  font-weight: 750;
+  padding-top: 7%;
+  font-family: inherit;
+  /*visibility: cubic-bezier(1,1,1.0,0);*/
+  /*animation: fadeOut 2s forwards;*/
+  /*animation-delay: 5s;*/
+  /*transition: opacity 1s ease;*/
+}
+
+/* Custom CSS for the fade-out effect */
+
+/* Add a class to trigger the fade-out after 3 seconds */
+
+/* Keyframes animation for fade-out */
+
+#contact {
+  font-size: 72px;
+  font-weight: 750;
+  padding-top: 5%;
+}
+
+#careers {
+  font-size: 72px;
+  font-weight: 750;
+  padding-top: 5%;
+}
+
+#contactconfirm {
+  font-size: 72px;
+  font-weight: 750;
+  padding-top: 5%;
+}
+
+#privacy {
+  font-size: 72px;
+  font-weight: 750;
+  padding-top: 5%;
+  /*align-items: center;*/
+}
+
+.imagecol {
+  align-items: top!important;
+  align-items: flex-start;
+  justify-content: center!important;
+  display: flex!important;
+}
+
+.implementation {
+  /*vertical-align: middle!important;*/
+  background-color: var(--bs-primary-bg-subtle)!important;
+  /*text-decoration-color: inherit!important;*/
+  height: 58px;
+  /*align-content: center!important;*/
+  /*text-align-last: left;*/
+  /*text-align: justify!important;*/
+  color: initial;
+  display: flex;
+  align-items: center!important;
+  /*font-size: x-large!important;*/
+  width: 100%;
+}
+
+.containertechnologies {
+  background-color: #1C6CE8!important;
+}
+
