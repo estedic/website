@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html data-bs-theme="auto" lang="en">
+
+<head>
+    <meta charset="utf-8">
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4906571f-aa03-4a1c-94d8-9ec488fe0cd6" data-blockingmode="auto" type="text/javascript"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG8CNHEBF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PG8CNHEBF6');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home</title>
+    <meta name="description" content="Estedic is a quality data and AI consultancy based in Amsterdam, founded in 2021. Our mission is to empower organizations to realize return on their data by providing expert data strategy and management, predictive analytics, generative AI, personalization, AI-driven process automation, and enhanced insights solutions.">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Estedic",
+            "url": "https://www.estedic.nl"
+        }
+    </script>
+    <script>
+        (function() {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
+    <link rel="icon" type="image/svg+xml" sizes="152x150" href="assets/img/logo_estedic.svg">
+    <link rel="icon" type="image/svg+xml" sizes="152x150" href="assets/img/logo_estedic.svg">
+    <link rel="icon" type="image/svg+xml" sizes="152x150" href="assets/img/logo_estedic.svg">
+    <link rel="icon" type="image/svg+xml" sizes="152x150" href="assets/img/logo_estedic.svg">
+    <link rel="icon" type="image/svg+xml" sizes="152x150" href="assets/img/logo_estedic.svg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark-Multi-Column-icons.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Stats-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md py-3 navbar-light">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html" style="font-size: 1.4em;"><img src="assets/img/logo_estedic.svg" style="width: 70px;"><span style="font-weight: bold;font-size: 2.5em;">&nbsp;estedic</span></a><button data-bs-toggle="collapse" class="navbar-toggler .navbar-nav-scroll" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2" style="--bs-body-font-size: 1rem;--bs-body-font-weight: 400;margin: 0px;padding: 0px;font-size: 18px;">
+                <ul class="navbar-nav ms-auto" style="position: static;">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item dropdown"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Company&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="company.html">About</a><a class="dropdown-item" href="network.html">Network</a><a class="dropdown-item" href="technologies.html">Technologies</a><a class="dropdown-item" href="careers.html">Careers</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="services.html">Services&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="services.html#accordion-datastrategy">Data Strategy and Management</a><a class="dropdown-item" href="services.html#accordion-ml">Predicting What's Next</a><a class="dropdown-item" href="services.html#accordion-genai">Generative AI</a><a class="dropdown-item" href="services.html#accordion-personalization">Personalization</a><a class="dropdown-item" href="services.html#accordion-rpa">AI Driven Process Automation</a><a class="dropdown-item" href="services.html#accordion-bi">Enhanced Insights</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="industries.html">Industries&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="industries.html#tab-bankinginsurance">Banking &amp; Insurance</a><a class="dropdown-item" href="industries.html#tab-manufacturinglogistics">Manufacturing &amp; Logistics</a><a class="dropdown-item" href="industries.html#tab-governmentngos">Government &amp; NGO's</a><a class="dropdown-item" href="industries.html#tab-retailfmcg">Retail &amp; FMCG</a><a class="dropdown-item" href="industries.html#tab-energy">Energy</a><a class="dropdown-item" href="industries.html#tab-telecom">Telecom</a><a class="dropdown-item" href="industries.html#tab-healthcare">Healthcare</a><a class="dropdown-item" href="industries.html#tab-sme">SME</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="usecases.html">Use Cases</a></li>
+                </ul><a class="btn btn-primary ms-md-2 getstartedtop" role="button" href="contact.html">Get in touch&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill">
+                        <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div data-bss-parallax-bg="true" style="height: 500px;"><div id="topology" style="height:100vh"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+<script>
+VANTA.TOPOLOGY({
+  el: "#topology",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x1C6CE8,
+  backgroundColor: 0x04124F
+
+})
+</script>
+<div class="wrapper">
+<h3>We empower organizations to realize return on data:</h3>
+<br>
+<h1 class="ml4">
+  <span class="letters letters-1">Save Costs</span>
+  <span class="letters letters-2">Increase Revenue</span>
+  <span class="letters letters-3">Enhance Quality</span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <h3>Learn how we can help...</h3>
+</div>
+
+<!-- Look at https://tobiasahlin.com/moving-letters/ -->
+
+
+</div>
+    </section>
+    <section>
+        <section>
+            <div class="container">
+                <p><br><br><br></p>
+            </div>
+        </section>
+        <div class="container">
+            <h4 class="fs-3"><strong>Empowering Organizations with Data And AI Solutions</strong></h4>
+            <p class="fs-5" style="font-size: 20px;">Our mission is to empower organizations to realize significant returns on their data investments. As an Amsterdam-based data and AI consultancy company founded in 2021, we have swiftly earned a reputation for delivering top-tier solutions to clients both locally and internationally. Each organization has distinct goals and challenges. Therefore, we offer a wide range of data and AI services, carefully designed to cater to your requirements:</p>
+        </div>
+        <div class="container">
+            <p class="fs-5" style="font-size: 20px;"></p>
+        </div>
+        <div class="container py-4 py-xl-5">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                <div class="col"><a class="text-decoration-none" href="services.html#accordion-datastrategy">
+                        <div class="card bg-light-subtle" data-bss-hover-animate="pulse">
+                            <div class="card-body p-4" style="box-shadow: 0px 0px 0px 0px;filter: blur(0px);--bs-body-font-weight: 400;">
+                                <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon" style="width: 42px;height: 42px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-people" style="width: 24px;height: 24px;">
+                                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"></path>
+                                    </svg></div>
+                                <h4 class="text-nowrap card-title">Data Strategy &amp; Management</h4>
+                                <p class="card-text">Creating a successful data strategy is fundamental for driving business growth. Our expert team defines a data strategy aligned with your organization's goals and we further guide you to translate it into actionable plans that seamlessly integrate with your people, processes, and technology.</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col"><a class="text-decoration-none" href="services.html#accordion-ml">
+                        <div class="card bg-light-subtle" data-bss-hover-animate="pulse">
+                            <div class="card-body p-4">
+                                <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon" style="width: 42px;height: 42px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-skip-forward" style="width: 24px;height: 24px;">
+                                        <path d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.752l-6.267 3.636c-.52.302-1.233-.043-1.233-.696v-2.94l-6.267 3.636C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696L7.5 7.248v-2.94c0-.653.713-.998 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5zM1 4.633v6.734L6.804 8 1 4.633zm7.5 0v6.734L14.304 8 8.5 4.633z"></path>
+                                    </svg></div>
+                                <h4 class="card-title">Predicting What's Next</h4>
+                                <p class="card-text">Stay ahead of the competition with predictive analytics powered by cutting-edge data science and machine learning techniques. Our solutions enable you to understand your customers on a deeper level, forecast future trends, and market dynamics, empowering you to make informed decisions with confidence.</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col"><a class="text-decoration-none" href="services.html#accordion-genai">
+                        <div class="card bg-light-subtle" data-bss-hover-animate="pulse">
+                            <div class="card-body p-4">
+                                <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon" style="width: 42px;height: 42px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-rocket-takeoff" style="width: 24px;height: 24px;">
+                                        <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362.798-.799.96-1.932.362-2.531-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532Z"></path>
+                                        <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9.42 9.42 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a9.556 9.556 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093.067.017.12.033.16.045.184.06.279.13.351.295l.029.073a3.475 3.475 0 0 1 .157.721c.055.485.051 1.178-.159 2.065Zm-4.828 7.475.04-.04-.107 1.081a1.536 1.536 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a8.548 8.548 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006ZM5.205 5c-.625.626-.94 1.351-1.004 2.09a8.497 8.497 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107-.04.039Zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a2.835 2.835 0 0 0-.045-.283 3.078 3.078 0 0 0-.3-.041Z"></path>
+                                        <path d="M7.009 12.139a7.632 7.632 0 0 1-1.804-1.352A7.568 7.568 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"></path>
+                                    </svg></div>
+                                <h4 class="card-title">Generative AI</h4>
+                                <p class="card-text">Harnessing the potential of AI's generative capabilities can unlock novel opportunities for your organization. We specialize in identifying and implementing impactful use cases for foundational or open-source large language models, tailoring them to your specific industry and business needs.</p>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+            <p class="fs-5" style="font-size: 20px;"><br><br></p>
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                <div class="col"><a class="text-decoration-none" href="services.html#accordion-personalization">
+                        <div class="card bg-light-subtle" data-bss-hover-animate="pulse">
+                            <div class="card-body p-4">
+                                <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon" style="width: 42px;height: 42px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-exclamation" style="width: 24px;height: 24px;">
+                                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"></path>
+                                        <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1.5a.5.5 0 0 0 1 0V11a.5.5 0 0 0-.5-.5Zm0 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"></path>
+                                    </svg></div>
+                                <h4 class="card-title">Personalization</h4>
+                                <p class="card-text">In the age of hyper-personalization, we enhance application data personalization using data science and machine learning. By applying classification and clustering techniques, we deliver custom recommendations, boosting customer loyalty and satisfaction.&nbsp;</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col"><a class="text-decoration-none" href="services.html#accordion-rpa">
+                        <div class="card bg-light-subtle" data-bss-hover-animate="pulse">
+                            <div class="card-body p-4">
+                                <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon" style="width: 42px;height: 42px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-robot" style="width: 24px;height: 24px;">
+                                        <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"></path>
+                                        <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"></path>
+                                    </svg></div>
+                                <h4 class="text-nowrap card-title">AI Driven Process Automation</h4>
+                                <p class="card-text">Optimize your organization's processes and workflows through our expertise in process mining and robotic process automation. We ensure your operations are less error-prone, more efficient, cost-effective, and resilient, empowering your team to focus on high-value tasks.</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col"><a class="text-decoration-none" href="services.html#accordion-bi">
+                        <div class="card bg-light-subtle" data-bss-hover-animate="pulse">
+                            <div class="card-body p-4">
+                                <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon" style="width: 42px;height: 42px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-file-bar-graph" style="width: 24px;height: 24px;">
+                                        <path d="M4.5 12a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1zm3 0a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm3 0a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1z"></path>
+                                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"></path>
+                                    </svg></div>
+                                <h4 class="card-title">Enhanced Insights</h4>
+                                <p class="card-text">Data-driven insights are invaluable for strategic decision-making. Our experts are skilled in deploying descriptive analytics and creating business intelligence solutions that translate complex data into visually engaging management information dashboards.</p>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container">
+            <h4 class="fs-3"><br><strong>The Best-Fit Products for Your Success</strong></h4><a class="text-decoration-none" href="technologies.html">
+                <p class="fs-5" style="font-size: 20px;">We believe in commoditizing wherever possible while being bespoke when needed, ensuring that our solutions are tailored to suit your unique requirements. We advocate for cloud-native practices and remain technology stack agnostic, selecting the best-fit products to achieve your objectives. Estedic is a registered consulting and system integration partner for both&nbsp;<span style="color: var(--bs-body-color);">Databricks</span>&nbsp;and&nbsp;<span style="color: var(--bs-body-color);">Snowflake</span>.</p>
+            </a>
+            <p class="fs-5" style="font-size: 20px;"></p>
+            <section>
+                <div class="container">
+                    <p><br><br><br></p>
+                </div>
+            </section>
+        </div>
+        <div class="container" style="width: 100%;height: 50%;">
+            <div data-bss-parallax-bg="true" style="height: 500px;background-image: url(&quot;assets/img/abstract_horizontal_lines.png&quot;);background-position: center;background-size: cover;">
+                <figure class="fs-1" style="text-align: center;color: var(--bs-body-bg);font-weight: bold;position: relative;display: grid;padding: 15%;height: 100%;">
+                    <blockquote class="blockquote">
+                        <p id="blocktext">'The key to achieve AI success is to use better data, not bigger data'</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer" style="--bs-body-font-weight: 400;font-size: 22px;">Andrew Ng</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bg-light border rounded border-0 border-light d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5">
+                <div class="pb-2 pb-lg-1" style="/*color: black;*/">
+                    <h2 class="fw-bold mb-2" style="color: var(--bs-dark);font-weight: bold;"><span style="color: rgb(52, 58, 64);">Get started today</span></h2>
+                    <p class="mb-0" style="color: var(--bs-gray-800);">Schedule a free consult to learn how we can help you unlock the full potential of your data...</p>
+                </div>
+                <div class="my-2"><a class="btn btn-primary fs-5 py-2 px-4" role="button" id="getstartedcta" href="contact.html">Get started&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill">
+                            <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
+                        </svg></a></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <p><br><br><br></p>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Implementation</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link-secondary text-decoration-none" href="services.html#accordion-dma">Data Maturity assessment</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="services.html#accordion-ucv">Use case validation</a></li>
+                        <li></li>
+                        <li><a class="link-secondary text-decoration-none" href="services.html#accordion-poc">Proof of Concept</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="services.html#accordion-pm">Project Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">About</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link-secondary text-decoration-none" href="company.html">Company</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="network.html">Network</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="technologies.html">Technologies</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="privacysecurity.html">Privacy &amp; Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Careers</h3>
+                    <ul class="list-unstyled">
+                        <li></li>
+                        <li><a class="link-secondary text-decoration-none" href="careers.html">Benefits</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="careers.html">Job openings</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
+                    <div class="fw-bold d-flex align-items-center mb-2"><span style="margin-right: -1px;padding-left: 0px;font-size: 1.4em;"><a href="#" title="Go to top of page"><img src="assets/img/logo_estedic.svg" style="width: 30px;"></a>&nbsp;estedic</span></div>
+                    <p class="text-muted"><strong>Realize return on data</strong></p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center pt-3">
+                <p class="text-muted mb-0">Copyright © 2023 Estedic B.V.</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="https://www.medium.com/estedic" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-medium" style="width: 24px;height: 24px;">
+                                <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" style="width: 24px;height: 24px;"><a href="https://github.com/estedic" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="width: 24px;height: 24px;">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" style="width: 24px;height: 24px;"><a href="https://www.linkedin.com/company/estedic/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin" style="width: 24px;height: 24px;">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/ml4.js"></script>
+    <script src="assets/js/deeplink.js"></script>
+    <script src="assets/js/servicesheader.js"></script>
+    <script src="assets/js/industriesheader.js"></script>
+    <script src="assets/js/industriesclicks.js"></script>
+    <script src="assets/js/servicesclicks.js"></script>
+</body>
+
+</html>
