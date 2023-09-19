@@ -10,28 +10,16 @@ h1 {
 .wrapper {
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 25%;
   width: 100%;
   /*left: 500px;*/
   color: white;
   /*font-size: 10px;*/
   /*margin: 20px;*/
   /*H1: 10%;*/
-}
-
-.ml4 {
-  position: relative;
+  font-size: 72px;
   font-weight: 750;
-  font-size: 4.5em;
-}
-
-.ml4 .letters {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0.3em;
-  right: 0;
-  opacity: 0;
+  /*vertical-align: baseline;*/
 }
 
 a {
@@ -65,19 +53,69 @@ a {
   background-color: #1C6CE8 !important;
 }
 
-#getstartedcta {
-  background-color: #1c6ce8 !important;
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  /*min-height: 315px!important;*/
 }
 
-#usecases {
-  font-weight: 750;
-  padding-top: 5%;
-  font-size: 72px;
+@media (max-width: 576px) {
+  #blocktext-1 {
+    font-size: 36px;
+  }
 }
 
-#company {
-  font-size: 72px;
-  font-weight: 750;
-  padding-top: 5%;
+@media (max-width: 576px) {
+  #blocktext-2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  #blocktext-7 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  #blocktext-5 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  #blocktext-6 {
+    font-size: 36px;
+  }
+}
+
+.text-decoration-whitenone {
+  text-decoration: none!important;
+  color: #ffffff!important;
+}
+
+@media (min-width: 768px) {
+  .cardshp {
+    min-height: 410px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardshp {
+    min-height: 315px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardshp {
+    min-height: 265px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cardshp {
+    min-height: 240px;
+  }
 }
 

@@ -36,6 +36,9 @@ function handleHashTab() {
     case "tab-sme":
       writeToOutputInd("SME's");
       break;
+    case "tab-industries":
+      writeToOutputInd("Industries");
+      break;
     default:
       writeToOutputInd("");
   }
