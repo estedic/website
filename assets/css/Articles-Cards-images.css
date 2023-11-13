@@ -117,18 +117,6 @@ img {
   }
 }
 
-@media (min-width: 300px) {
-  div.hptext {
-    font-size: smaller;
-  }
-}
-
-@media (min-width: 576px) {
-  div.hptext {
-    font-size: inherit;
-  }
-}
-
 #returndataai {
   align-content: center;
 }
