@@ -95,34 +95,3 @@ a {
   color: #ffffff!important;
 }
 
-@media (min-width: 768px) {
-  .cardshp {
-    min-height: 300px;
-  }
-}
-
-@media (min-width: 992px) {
-  .cardshp {
-    min-height: 250px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .cardshp {
-    min-height: 250px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .cardshp {
-    min-height: 240px;
-  }
-}
-
-@media (min-width:768px) {
-  .col-md-4 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-}
-

@@ -6,37 +6,37 @@ function handleClickAcc(event) {
 
     switch (itemId) {
       case "datastrategy":
-        writeToOutputUseCases("Data Strategy & Management");
+        writeToOutputDI("Data Strategy & Management");
         break;
       case "ml":
-        writeToOutputUseCases("Predicting What's Next");
+        writeToOutputDI("Predicting What's Next");
         break;
       case "genai":
-        writeToOutputUseCases("Generative AI");
+        writeToOutputDI("Generative AI");
         break;
       case "personalization":
-        writeToOutputUseCases("Personalization");
+        writeToOutputDI("Personalization");
         break;
       case "rpa":
-        writeToOutputUseCases("AI Driven Process Automation");
+        writeToOutputDI("AI Driven Process Automation");
         break;
       case "bi":
-        writeToOutputUseCases("Enhanced Insights");
+        writeToOutputDI("Enhanced Insights");
         break;
       default:
-        writeToOutputUseCases("");
+        writeToOutputDI("");
     }
   }
 }
 
 // Function to write content to outputServicesDiv
-function writeToOutputUseCases(content) {
-  const outputUseCasesDiv = document.getElementById('outputUseCasesDiv');
-  outputUseCasesDiv.textContent = content;
+function writeToOutputDI(content) {
+  const outputDIDiv = document.getElementById('outputDIDiv');
+  outputDIDiv.textContent = content;
 }
 
 // Add click event listeners to all the accordion items
-const accordionItems = document.querySelectorAll('.accordion-item');
-accordionItems.forEach(item => {
+const accordionItemsDI = document.querySelectorAll('.accordion-item');
+accordionItemsDI.forEach(item => {
   item.addEventListener('click', handleClickAcc);
 });

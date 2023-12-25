@@ -15,36 +15,6 @@ img {
 }
 
 @media (min-width: 577px) {
-  #outputUseCasesDiv {
-    color: white!important;
-    font-size: 68px;
-    border: none;
-    font-weight: 750;
-    /*padding-top: 7%;*/
-    font-family: inherit;
-    /*visibility: cubic-bezier(1,1,1.0,0);*/
-    /*animation: fadeOut 2s forwards;*/
-    /*animation-delay: 5s;*/
-    /*transition: opacity 1s ease;*/
-  }
-}
-
-@media (max-width: 576px) {
-  #outputUseCasesDiv {
-    color: white!important;
-    font-size: 44px;
-    border: none;
-    font-weight: 750;
-    /*padding-top: 7%;*/
-    font-family: inherit;
-    /*visibility: cubic-bezier(1,1,1.0,0);*/
-    /*animation: fadeOut 2s forwards;*/
-    /*animation-delay: 5s;*/
-    /*transition: opacity 1s ease;*/
-  }
-}
-
-@media (min-width: 577px) {
   #outputIndustriesDiv {
     color: white!important;
     font-size: 68px;
@@ -135,12 +105,6 @@ img {
   }
 }
 
-.rido:hover .bi-arrow-down-right-square {
-  color: #1c6ce8;
-  transform: rotate(45deg);
-  transition: transform 0.1s ease;
-}
-
 .ribackpar:hover .backtext {
   color: #1c6ce8!important;
   /*transform: rotate(315deg);*/
@@ -157,11 +121,6 @@ img {
   color: #1c6ce8;
   transform: rotate(45deg);
   transition: transform 0.1s ease;
-}
-
-.serico:hover .bs-icon-md.bs-icon-rounded.bs-icon-primary.bs-icon.estediccolor {
-  transform: scale(1.5);
-  transition: 0.2s ease;
 }
 
 .hover-underline-animation:hover::after {
@@ -202,5 +161,31 @@ img {
   font-size: 48px;
   /*display: none;*/
   opacity: 0;
+}
+
+@media (max-width: 992px) {
+  .containercards {
+    flex-flow: column;
+    gap: 15px;
+    display: flex;
+  }
+}
+
+.containercards {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 15px;
+}
+
+@media (max-width: 1199px) {
+  .containercards {
+    flex-flow: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .containercards {
+    flex-flow: nowrap;
+  }
 }
 

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html data-bs-theme="auto" lang="en">
+
+<head>
+    <meta charset="utf-8">
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4906571f-aa03-4a1c-94d8-9ec488fe0cd6" data-blockingmode="auto" type="text/javascript"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG8CNHEBF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PG8CNHEBF6');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Data Governance</title>
+    <meta name="description" content="Estedic is a quality data and AI consultancy. Our mission is to empower data and AI solutions by delivering value added services to clients both locally and internationally. In doing so, we help organizations realize return on data.">
+    <script>
+        (function() {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/logo_estedic180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo_estedic16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo_estedic32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/logo_estedic180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo_estedic192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/logo_estedic512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Stats-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-3 navbar-light">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html" style="font-size: 1.4em;"><img src="assets/img/logo_estedic.svg" style="width: 70px;"><span style="font-weight: bold;font-size: 2.5em;">&nbsp;estedic</span></a><button data-bs-toggle="collapse" class="navbar-toggler .navbar-nav-scroll" data-bs-target="#navcol"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol" style="--bs-body-font-size: 1rem;--bs-body-font-weight: 400;margin: 0px;padding: 0px;font-size: 18px;padding-bottom: 0px;margin-bottom: 0px;">
+                <ul class="navbar-nav ms-auto" style="position: static;">
+                    <li class="nav-item dropdown"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Services</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="datagovernance.html#accordion-dg">Data Governance</a><a class="dropdown-item" href="datamanagement.html#accordion-dm">Data Management</a><a class="dropdown-item" href="dataintelligence.html#accordion-di">Data Intelligence</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="implementation.html">Approach</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item dropdown"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Company&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="company.html">About</a><a class="dropdown-item" href="careers.html">Careers</a></div>
+                    </li>
+                </ul><a class="btn btn-primary ms-md-2 estediccolor" role="button" href="contact.html">Get in touch&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill" style="padding-bottom: 0px;margin-bottom: 3px;">
+                        <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="d-flex d-xl-flex justify-content-start align-items-end justify-content-xl-start align-items-xl-end" data-bss-parallax-bg="true" style="height: 90vh;background: url(&quot;assets/img/abstract_purple_blue_lines.png&quot;) center / cover;margin: 0px 10px 0px 10px;padding: 0px 0px 0px 0px;overflow: hidden;">
+            <div class="container d-flex d-xl-flex justify-content-xl-start align-items-xl-end" id="title">
+                <div class="row d-flex justify-content-start align-items-end">
+                    <div class="col-10" data-aos="fade" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" style="border-left: 2px solid #1c6ce8 ;">
+                        <div id="outputDGDiv" class="texttitle text-white d-xl-flex"></div>
+                        <p class="fs-4 text-white">Ensuring data quality, accessibility, and reliability.</p>
+                        <p class="fs-1 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-down-right-square fs-1">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 3.146a.5.5 0 1 0-.708.708L9.243 9.95H6.475a.5.5 0 1 0 0 1h3.975a.5.5 0 0 0 .5-.5V6.475a.5.5 0 1 0-1 0v2.768L5.854 5.146z"></path>
+                            </svg></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <hr style="border-style: none;">
+            <ol class="breadcrumb" style="font-size: 16px;">
+                <li class="breadcrumb-item"><a href="index.html"><span>Home</span></a></li>
+                <li class="breadcrumb-item"><a href="#accordion-dg"><span>Data Governance</span></a></li>
+            </ol>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="fs-3 fw-bold">Data Governance: Establish a Strategic Framework for Managing Your Data Assets</p>
+                <p class="fs-5">Solid data governance is essential for any business that wants to use data wisely. We focus on helping you get your data in order, making sure it's secure, compliant, and usable for your needs.<br><br>Our approach is all about understanding your unique business requirements and setting up a data governance structure that works for you. Whether you're starting from scratch or improving existing systems, we're here to guide you through every step.<br><br>With Estedic, you'll get straightforward, practical advice and solutions to make your data trustworthy. We ensure your data governance aligns with your goals, helping you make better decisions and achieve greater success.<br><br>Discover how our data governance consultancy can bring clarity and efficiency to your data management.&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-11 col-xl-7">
+                <hr>
+                <p class="fs-3 fw-bold">Data Governance Areas</p>
+                <p class="fs-5" style="height: 145px;">Each data governance area mentioned below is designed to address specific aspects of data governance, providing a holistic approach to enhancing your data capabilities.</p>
+                <div class="accordion" role="tablist" id="accordion">
+                    <div class="accordion-item" id="framework">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion .item-1" aria-expanded="true" aria-controls="accordion .item-1"><strong>Framework Development&nbsp;&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-map fs-4">
+                                    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"></path>
+                                </svg></button></h2>
+                        <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">A strategic data governance framework is essential for aligning data management practices with business objectives, ensuring that data is used effectively and responsibly. It provides a clear roadmap for data handling, compliance, and utilization.<br><br>Organizations often struggle with integrating data governance into their broader strategic objectives, leading to disjointed practices and ineffective data management.<br><br>Estedic's expertise in implementing robust data governance frameworks ensures that organizations can develop a comprehensive strategy that aligns with their goals. Leveraging our knowledge of data management technologies and regulatory requirements, Estedic can tailor a framework that seamlessly integrates into your organization's business model.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="standards">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion .item-2" aria-expanded="false" aria-controls="accordion .item-2"><strong>Quality &amp; Standards&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-database-check fs-4">
+                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514Z"></path>
+                                    <path d="M12.096 6.223A4.92 4.92 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.493 4.493 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.525 4.525 0 0 1-.813-.927C8.5 14.992 8.252 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.552 4.552 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10c.262 0 .52-.008.774-.024a4.525 4.525 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777ZM3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4Z"></path>
+                                </svg></button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">High data quality and adherence to standards are crucial for reliable decision-making and operational efficiency. It impacts everything from analytics to compliance.<br><br>Many organizations face challenges in maintaining consistent data quality and implementing universally accepted data standards.<br><br>With Estedic's experience in setting and enforcing data quality and architecture standards, organizations can achieve consistent and high-quality data management. Our approach includes identifying data quality issues, developing standards, and establishing procedures to ensure ongoing data integrity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="compliance">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion .item-3" aria-expanded="false" aria-controls="accordion .item-3"><strong>Compliance &amp; Security&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-shield-lock fs-4">
+                                    <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"></path>
+                                    <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"></path>
+                                </svg></button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">In an era of stringent data regulations, ensuring compliance and securing data are paramount to protect against legal risks and data breaches.<br><br>Navigating complex and evolving data privacy laws and implementing robust security measures is challenging for many organizations.<br><br>Estedic's deep understanding of data privacy laws and security protocols means we can help organizations implement comprehensive compliance and security strategies. Our expertise in GDPR and other regulations ensures that your data governance practices are both compliant and secure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="stakeholder">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion .item-4" aria-expanded="false" aria-controls="accordion .item-4"><strong>Change &amp; Stakeholders&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-people fs-4">
+                                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"></path>
+                                </svg></button></h2>
+                        <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Successful data governance requires organizational change and active stakeholder engagement to ensure acceptance and effective implementation across the company.<br><br>Resistance to change and siloed departments often hinder the implementation of effective data governance.<br><br>Estedic's approach to change management involves stakeholder engagement and education, fostering a culture of data governance within the organization. We help break down silos, ensuring that data governance is embedded across all departments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="oversight">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion .item-5" aria-expanded="false" aria-controls="accordion .item-5"><strong>Operational Oversight&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-binoculars fs-4">
+                                    <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V2.5zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5h-1zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V4zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V3zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14z"></path>
+                                </svg></button></h2>
+                        <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Continuous oversight ensures that data governance policies are effectively implemented and adjusted as needed, maintaining the integrity of the data governance strategy.<br><br>Many organizations lack the resources or expertise to continuously monitor and manage their data governance activities.<br><br>Estedic offers hands-on oversight and expertise in data governance, providing regular audits, issue management, and stewardship. Furthermore, we can help you select and implement advanced data observability solutions. This ensures that data governance practices are not only established but also actively maintained and improved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="capacity">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion .item-6" aria-expanded="false" aria-controls="accordion .item-6"><strong>Capability Building&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-buildings fs-4">
+                                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z"></path>
+                                    <path d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z"></path>
+                                </svg></button></h2>
+                        <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Educating staff and building data capabilities are key to ensuring that everyone in the organization understands and can effectively engage with data governance practices.<br><br>A common challenge is the lack of data literacy and governance awareness among staff members.<br><br>Estedic provides comprehensive training and capacity-building programs. These programs are designed to enhance staff competencies in data governance, management, and related technologies, thus building a knowledgeable and data-aware workforce.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="fs-5"><br><br></p>
+            </div>
+            <div class="col-md-12 col-lg-11 col-xl-5">
+                <hr>
+                <p class="fs-3 fw-bold">Implementation&nbsp;</p>
+                <p class="fs-5" style="height: 145px;">Our agile <a href="implementation.html#Implementation">four-step methodology</a> is designed to guide you through every stage of your data-driven journey, ensuring seamless integration and impactful outcomes.<br><br></p>
+                <p class="text-nowrap fs-5 fw-normal border rounded implementation" style="color: var(--bs-primary-text-emphasis);"><strong>&nbsp; &nbsp; Implementation&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-wrench-adjustable" style="width: 24;height: 24;">
+                        <path d="M16 4.5a4.492 4.492 0 0 1-1.703 3.526L13 5l2.959-1.11c.027.2.041.403.041.61Z"></path>
+                        <path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.49 4.49 0 0 0 11.5 9Zm-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376ZM3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+                    </svg><strong> </strong></p><a class="text-decoration-none" href="implementation.html#Implementation">
+                    <div class="d-flex align-items-center align-items-md-center align-items-lg-center align-items-xl-center hover-underline-animation" id="step-1" style="margin-top: 0px;">
+                        <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl" style="padding-top: 0px;transform: rotate(0deg) scale(1) skew(0deg);margin-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-1-square text-body">
+                                <path d="M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"></path>
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"></path>
+                            </svg></div>
+                        <div>
+                            <h4>Data Maturity Assessment</h4>
+                        </div>
+                    </div>
+                </a><a class="text-decoration-none" href="implementation.html#Implementation">
+                    <div class="d-flex align-items-center align-items-md-center align-items-lg-center align-items-xl-center hover-underline-animation" id="step-2" style="margin-top: 0px;">
+                        <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl" style="padding-top: 0px;transform: rotate(0deg) scale(1) skew(0deg);margin-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-2-square text-body">
+                                <path d="M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"></path>
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"></path>
+                            </svg></div>
+                        <div>
+                            <h4>Use Case Validation</h4>
+                        </div>
+                    </div>
+                </a><a class="text-decoration-none" href="implementation.html#Implementation">
+                    <div class="d-flex align-items-center align-items-md-center align-items-lg-center align-items-xl-center hover-underline-animation" id="step-3" style="margin-top: 0px;">
+                        <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl" style="padding-top: 0px;transform: rotate(0deg) scale(1) skew(0deg);margin-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-3-square text-body">
+                                <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"></path>
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"></path>
+                            </svg></div>
+                        <div>
+                            <h4>Proof of Concept</h4>
+                        </div>
+                    </div>
+                </a><a class="text-decoration-none" href="implementation.html#Implementation">
+                    <div class="d-flex align-items-center align-items-md-center align-items-lg-center align-items-xl-center hover-underline-animation" id="step-4" style="margin-top: 0px;">
+                        <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl" style="padding-top: 0px;transform: rotate(0deg) scale(1) skew(0deg);margin-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-4-square text-body">
+                                <path d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"></path>
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"></path>
+                            </svg></div>
+                        <div>
+                            <h4>Project Management</h4>
+                        </div>
+                    </div>
+                </a>
+                <hr style="border-style: none;">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="border-left: 2px solid #1c6ce8 ;">
+        <p class="fs-5">We provide Data Governance solutions that are tailored for your business. Our experts, with their deep industry knowledge and data and AI skills, collaborate closely with your team. This ensures that the strategies we develop directly address your unique challenges and ensure adoption.<br><br>Moreover, at Estedic, we don't just advise – we also help implement. Whether it's integrating cutting-edge data governance tools like Databricks Unity Catalog or harmonizing them with leading industry solutions such as Microsoft Purview, Collibra or Informatica, we're here to assist. Our approach ensures the delivery of high-quality, effective data governance solutions that seamlessly fit into&nbsp; and harness the strenghts of your existing solutions.</p>
+    </div>
+    <p><br><br></p>
+    <div class="container">
+        <div data-bss-parallax-bg="true" style="height: 500px;background-image: url(&quot;assets/img/abstract_purple_blue_lines.png&quot;);background-position: center;background-size: cover;">
+            <figure class="fs-1" id="returndataai" style="text-align: center;color: var(--bs-body-bg);font-weight: bold;position: relative;display: grid;padding: 16%;height: 100%;">
+                <blockquote class="blockquote">
+                    <p id="blocktext-6"><img src="assets/img/logo_estedic.svg" width="85" height="85">&nbsp; Return on Data and AI</p>
+                </blockquote>
+            </figure>
+        </div>
+    </div>
+    <p><br><br></p>
+    <div class="container py-4 py-xl-5" style="padding-top: 10px;margin-top: -30px;">
+        <p class="fs-3 fw-bold">Fundamentals for Achieving Data and AI Succes:</p>
+        <div class="row">
+            <div class="col-md-12 col-xl-6 mx-auto p-4" style="padding-top: 24px;margin-top: -45px;">
+                <hr class="my-5">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center" style="margin-top: 0px;">
+                    <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl" style="padding-top: 0px;transform: rotate(0deg) scale(1) skew(0deg);margin-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-square text-body">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                        </svg></div>
+                    <div>
+                        <h4>Framing the Right Business Goals for Technology Adoption:&nbsp;</h4>
+                        <p>Estedic ensures that your technology adoption aligns with clear business goals, focusing on aspects such as production growth, revenue increase, and reduction of business costs.</p>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl" style="margin-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-square text-body">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                        </svg></div>
+                    <div>
+                        <h4>Implementing Unified Analytics for Enhanced Collaboration:</h4>
+                        <p>Our unified analytics approach empowers different professionals, including IT personnel, data scientists, and ML engineers, to interact seamlessly, enabling automated collaboration across the organization.</p>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-square text-body">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                        </svg></div>
+                    <div>
+                        <h4>Taking Incremental Steps to achieve a Data-Centric Mindset:</h4>
+                        <p>Our iterative approach to adopting data science, ML, and AI technologies ensures that your organization progresses steadily towards becoming data-centric.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xl-6 mx-auto p-4" style="padding-top: 0px;margin-top: -45px;">
+                <hr class="my-5">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-square text-body">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                        </svg></div>
+                    <div>
+                        <h4>Modernizing Infrastructure for Seamless Data Access:</h4>
+                        <p>We help organizations break down data silos and seamlessly integrate their infrastructure. Helping you to migrate to the cloud is a key solution we offer to ensure better accessibility and integration of data.</p>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-square text-body">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                        </svg></div>
+                    <div>
+                        <h4>Fostering Data Literacy for Cultural Transformation:</h4>
+                        <p>We recognize that data literacy is crucial for a successful data-driven culture. Estedic offers data literacy training to empower your workforce, fostering a culture that embraces data science and AI.</p>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <div class="bs-icon-xl d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-square text-body">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                        </svg></div>
+                    <div>
+                        <h4>Ensuring Privacy, Security, and Ethical AI for Trusted Solutions:</h4>
+                        <p>At Estedic, we prioritize the confidentiality of your data, ensuring robust security and adherence to pertinent legislation and ethical AI principles. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bg-light border rounded border-0 border-light d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5">
+            <div class="pb-2 pb-lg-1" style="/*color: black;*/">
+                <h2 class="fw-bold mb-2" style="color: var(--bs-dark);font-weight: bold;"><span style="color: rgb(52, 58, 64);">Get started today</span></h2>
+                <p class="fs-5 mb-0" style="color: var(--bs-gray-800);">Schedule a free consultation to learn how we can help you realize return on your data...</p>
+            </div>
+            <div class="my-2"><a class="btn btn-primary fs-5 py-2 px-4" role="button" id="getstartedcta-2" href="contact.html">Get started&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill" style="font-size: 19px;margin-bottom: 2px;">
+                        <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
+                    </svg></a></div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <p><br><br><br></p>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Implementation</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link-secondary text-decoration-none" href="implementation.html#Implementation">Data Maturity Assessment</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="implementation.html#Implementation">Use Case Validation</a></li>
+                        <li></li>
+                        <li><a class="link-secondary text-decoration-none" href="implementation.html#Implementation">Proof of Concept</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="implementation.html#Implementation">Project Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Company</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link-secondary text-decoration-none" href="company.html">About</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="network.html">Network</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="work.html">Work</a></li>
+                        <li></li>
+                        <li><a class="link-secondary text-decoration-none" href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6">Careers</h3>
+                    <ul class="list-unstyled">
+                        <li></li>
+                        <li><a class="link-secondary text-decoration-none" href="careers.html#careerstop">Culture and Benefits</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="careers.html#careerstop">Job Openings</a></li>
+                        <li><a class="link-secondary text-decoration-none" href="careers.html#joinus">Join our Network</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
+                    <div class="fw-bold d-flex align-items-center mb-2"><span style="margin-right: -1px;padding-left: 0px;font-size: 1.4em;"><a href="#" title="Go to top of page"><img src="assets/img/logo_estedic.svg" style="width: 30px;"></a>&nbsp;estedic</span></div>
+                    <p class="text-muted"><strong>Realize return on data</strong></p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center pt-3">
+                <p class="text-muted mb-0">Copyright © 2023 Estedic B.V.</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="https://www.medium.com/estedic" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-medium" style="width: 24px;height: 24px;">
+                                <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" style="width: 24px;height: 24px;"><a href="https://github.com/estedic" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="width: 24px;height: 24px;">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" style="width: 24px;height: 24px;"><a href="https://www.linkedin.com/company/estedic/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin" style="width: 24px;height: 24px;">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                            </svg></a></li>
+                </ul>
+            </div><script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6579eab7aa6d10adcf7c60ea' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/nextparticle.js"></script>
+    <script src="assets/js/deeplink.js"></script>
+    <script src="assets/js/datagovernanceheader.js"></script>
+    <script src="assets/js/dataintelligenceheader.js"></script>
+    <script src="assets/js/datamanagementheader.js"></script>
+    <script src="assets/js/industriesheader.js"></script>
+    <script src="assets/js/industriesclicks.js"></script>
+    <script src="assets/js/datagovernanceclicks.js"></script>
+    <script src="assets/js/dataintelligenceclicks.js"></script>
+    <script src="assets/js/datamanagementclicks.js"></script>
+    <script src="assets/js/ml3.js"></script>
+</body>
+
+</html>
