@@ -117,14 +117,37 @@ img {
   transition: transform 0.1s ease;
 }
 
+.riupwhite:hover .bi-arrow-up-right-square-fill {
+  color: #ffffff;
+  transform: rotate(45deg);
+  transition: transform 0.1s ease;
+}
+
 .riup:hover .bi-arrow-up-right-square {
   color: #1c6ce8;
   transform: rotate(45deg);
   transition: transform 0.1s ease;
 }
 
+.hover-white-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
+}
+
+.hover-white-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
 }
 
 .hover-underline-animation::after {
@@ -140,6 +163,12 @@ img {
   transition: transform 0.25s ease-out;
 }
 
+.hover-white-underline-animation {
+  position: relative;
+  color: #black;
+  text-decoration: none;
+}
+
 .hover-underline-animation {
   position: relative;
   color: #black;
@@ -148,12 +177,6 @@ img {
 
 .card-body:hover .losegs {
   filter: grayscale(0%)!important;
-}
-
-@media (max-width: 768px) {
-  .imgcolumnthree {
-    display: none!important;
-  }
 }
 
 .ml3 {
@@ -186,6 +209,12 @@ img {
 @media (min-width: 1200px) {
   .containercards {
     flex-flow: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .colteam {
+    width: 100%!important;
   }
 }
 

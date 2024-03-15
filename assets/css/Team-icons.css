@@ -10,6 +10,10 @@
   color: var(--bs-primary);
 }
 
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
 .bs-icon-md {
   --bs-icon-size: 1.5rem;
 }
@@ -21,6 +25,11 @@
 .bs-icon.bs-icon-primary {
   color: var(--bs-white);
   background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5);
 }
 
 .bs-icon.bs-icon-rounded {

@@ -1,9 +1,0 @@
-.bs-icon-sm {
-  --bs-icon-size: 1rem;
-}
-
-.bs-icon.bs-icon-semi-white {
-  color: var(--bs-primary);
-  background: rgba(255, 255, 255, .5);
-}
-

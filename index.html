@@ -5,14 +5,14 @@
     <meta charset="utf-8">
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4906571f-aa03-4a1c-94d8-9ec488fe0cd6" data-blockingmode="auto" type="text/javascript"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG8CNHEBF6"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V63XZDGHXT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-PG8CNHEBF6');
+  gtag('config', 'G-V63XZDGHXT');
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home</title>
@@ -113,29 +113,46 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo_estedic192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/logo_estedic512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
-    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
-    <link rel="stylesheet" href="assets/css/Stats-icons.css">
+    <link rel="stylesheet" href="assets/css/logoslider.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="assets/css/reveal.css">
+    <link rel="stylesheet" href="assets/css/sticky-dark-top-nav-with-dropdown.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-icons.css">
+    <link rel="stylesheet" href="assets/css/Team-images.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg py-3 navbar-light">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html" style="font-size: 1.4em;"><img src="assets/img/logo_estedic.svg" style="width: 70px;"><span style="font-weight: bold;font-size: 2.5em;">&nbsp;estedic</span></a><button data-bs-toggle="collapse" class="navbar-toggler .navbar-nav-scroll" data-bs-target="#navcol"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol" style="--bs-body-font-size: 1rem;--bs-body-font-weight: 400;margin: 0px;padding: 0px;font-size: 18px;padding-bottom: 0px;margin-bottom: 0px;">
-                <ul class="navbar-nav ms-auto" style="position: static;">
-                    <li class="nav-item dropdown"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Services</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="datagovernance.html#accordion-dg">Data Governance</a><a class="dropdown-item" href="datamanagement.html#accordion-dm">Data Management</a><a class="dropdown-item" href="dataintelligence.html#accordion-di">Data Intelligence</a></div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="implementation.html">Approach</a></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item dropdown"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Company&nbsp;</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="company.html">About</a><a class="dropdown-item" href="careers.html">Careers</a></div>
-                    </li>
-                </ul><a class="btn btn-primary ms-md-2 estediccolor" role="button" href="contact.html">Get in touch&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill" style="padding-bottom: 0px;margin-bottom: 3px;">
-                        <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
-                    </svg></a>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="customAlert" style="text-align:center;border-radius:0px;"><span id="random-message"></span><button class="btn-close btn-close-white" type="button" data-bs-dismiss="alert" aria-label="Close"></button></div>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body bg-opacity-75">
+        <div class="container"><a class="navbar-brand d-flex align-items-center align-items-md-center" href="index.html" style="font-size: 1.4em;"><img class="d-md-flex" src="assets/img/logo_estedic.svg" style="width: 60px;"><span class="d-md-flex" style="font-weight: bold;font-size: 2.2em;">&nbsp;estedic</span></a><button class="navbar-toggler" data-bs-toggle="offcanvas" type="button" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>estedic</strong></h2><button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end pe-3">
+                        <li class="nav-item"><a class="nav-link hover-underline-animation" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown hover-underline-animation"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Services</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="datagovernance.html#accordion-dg">Data Governance&nbsp;&nbsp;</a><a class="dropdown-item" href="datamanagement.html#accordion-dm">Data Management&nbsp;</a><a class="dropdown-item" href="dataintelligence.html#accordion-di">Data Intelligence&nbsp;</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="pricing.html">Data Management as a Service</a>
+                            </div>
+                        </li>
+                        <li class="nav-item hover-underline-animation"><a class="nav-link hover-underline-animation" href="implementation.html">Approach</a></li>
+                        <li class="nav-item dropdown hover-underline-animation"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Company&nbsp;</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="company.html">About</a><a class="dropdown-item" href="careers.html">Careers</a></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="height: 15px;">&nbsp;</a></li>
+                        <li class="nav-item"></li>
+                    </ul><a class="btn d-lg-flex align-items-lg-center text-decoration-none riupwhite btn-primary btn" role="button" href="https://chatapp.estedic.nl" style="border-top-left-radius: 6px;border-top-right-radius: 6px;border-bottom-right-radius: 6px;border-bottom-left-radius: 6px;transform: scale(1);" target="blank">Chat with us&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill" style="padding-bottom: 0px;margin-bottom: 3px;">
+                            <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
+                        </svg></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -198,7 +215,7 @@ VANTA.TOPOLOGY({
         <div class="container">
             <div><h1 class="ml3">
 Solid governance and expert data management enabling data intelligence.<br>
-We help realize return on data...</h1>
+    We help realize return on data...</h1>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </div>
@@ -206,23 +223,23 @@ We help realize return on data...</h1>
         <div class="container">
             <p><br><br></p>
         </div>
-        <div class="container" style="border-left: 2px solid #1c6ce8;">
+        <div class="container reveal fade-bottom" style="border-left: 2px solid #1c6ce8;">
             <h1 class="text-muted" style="font-size: 34px;font-weight: bold;"><span style="text-decoration: underline;">Our Services</span></h1>
             <h4 class="fs-3 text-muted"><strong>Empowering Your Data And AI Success</strong></h4>
-            <p class="fs-5 text-muted" style="font-size: 20px;">Quality data is the cornerstone of any successful data-driven transformation. We provide you with the tools, techniques and expertise to set-up, implement, manage and utilize your data effectively. So you can realize return on your data. Discover our value added services:&nbsp;</p>
+            <p class="fs-5 text-muted" style="font-size: 20px;">Quality data is the cornerstone of any successful data-driven transformation. We provide you with the tools, techniques and expertise to set-up, implement, manage and utilize your data effectively. So you can realize return on your data. Use our <a href="https://chatapp.estedic.nl" target="_blank">AI-powered Data Management Assistant</a> and discover our value added services:&nbsp;</p>
         </div>
         <div class="container">
             <p class="fs-5" style="font-size: 20px;"></p>
         </div>
         <div class="container containercards">
-            <div class="card bg-dark-subtle border-light-subtle">
+            <div class="card bg-dark-subtle border-light-subtle reveal fade-bottom">
                 <div class="card-body hover-underline-animation riup">
                     <div class="row">
                         <div class="col-10 col-xl-10">
                             <h1 class="text-nowrap" style="font-size: 30px;font-weight: bold;text-align: left;color: #1c6ce8;">Data Governance&nbsp;</h1>
                         </div>
                         <div class="col-2 col-xl-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square fs-1">
-                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"></path>
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"></path>
                             </svg></div>
                     </div>
                     <hr><a class="text-decoration-none" href="datagovernance.html#accordion-dg">
@@ -231,14 +248,14 @@ We help realize return on data...</h1>
                     </a>
                 </div>
             </div>
-            <div class="card bg-dark-subtle border-light-subtle">
+            <div class="card bg-dark-subtle border-light-subtle reveal fade-bottom">
                 <div class="card-body hover-underline-animation riup">
                     <div class="row">
                         <div class="col-10 col-xl-10">
                             <h1 class="text-nowrap" style="font-size: 30px;font-weight: bold;text-align: left;color: #1c6ce8;">Data Management&nbsp;</h1>
                         </div>
                         <div class="col-2 col-xl-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square fs-1">
-                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"></path>
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"></path>
                             </svg></div>
                     </div>
                     <hr><a class="text-decoration-none" href="datamanagement.html#accordion-dm">
@@ -247,14 +264,14 @@ We help realize return on data...</h1>
                     </a>
                 </div>
             </div>
-            <div class="card bg-dark-subtle border-light-subtle">
+            <div class="card bg-dark-subtle border-light-subtle reveal fade-bottom">
                 <div class="card-body hover-underline-animation riup">
                     <div class="row">
                         <div class="col-10 col-xl-10">
                             <h1 class="text-nowrap" style="font-size: 30px;font-weight: bold;text-align: left;color: #1c6ce8;">Data Intelligence&nbsp;</h1>
                         </div>
                         <div class="col-2 col-xl-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square fs-1">
-                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"></path>
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"></path>
                             </svg></div>
                     </div>
                     <hr><a class="text-decoration-none" href="dataintelligence.html#accordion-di">
@@ -265,25 +282,88 @@ We help realize return on data...</h1>
             </div>
         </div>
         <hr style="border: 3px none #1c6ce8 ;">
+        <section>
+            <div class="container">
+                <p><br><br><br></p>
+            </div>
+        </section>
+        <div class="d-lg-flex logo-slider" style="backdrop-filter: grayscale(0%);">
+            <div class="logos-slide" style="backdrop-filter: grayscale(0%);"><a class="text-decoration-none" href="technologies.html#databricks" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);">
+                    <picture>
+                        <source srcset="assets/img/logo_databricks_wide_whitetext.svg 300w" media="(prefers-color-scheme: dark)">
+                        <source srcset="assets/img/logo_databricks_wide.svg 300w"><img src="" width="250px">
+                    </picture>
+                </a><a class="text-decoration-none" href="technologies.html#snowflake" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);"><img src="assets/img/logo_snowflake_small.png" width="250px"></a><a class="text-decoration-none" href="technologies.html#dataworld" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);"><img src="assets/img/logo_dataworld.png" width="250px"></a><a class="text-decoration-none" href="technologies.html#alation" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);">
+                    <picture>
+                        <source srcset="assets/img/alation_logo_white.png 908w" media="(prefers-color-scheme: dark)">
+                        <source srcset="assets/img/alation_logo.png 1000w"><img>
+                    </picture>
+                </a><a class="text-decoration-none" href="technologies.html#databricks" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);">
+                    <picture>
+                        <source srcset="assets/img/logo_databricks_wide_whitetext.svg 300w" media="(prefers-color-scheme: dark)">
+                        <source srcset="assets/img/logo_databricks_wide.svg 300w"><img src="" width="250px">
+                    </picture>
+                </a><a class="text-decoration-none" href="technologies.html#snowflake" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);"><img src="assets/img/logo_snowflake_small.png" width="250px"></a><a class="text-decoration-none" href="technologies.html#dataworld" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);"><img src="assets/img/logo_dataworld.png" width="250px"></a><a class="text-decoration-none" href="technologies.html#alation" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);">
+                    <picture>
+                        <source srcset="assets/img/alation_logo_white.png 908w" media="(prefers-color-scheme: dark)">
+                        <source srcset="assets/img/alation_logo.png 1000w"><img>
+                    </picture>
+                </a><a class="text-decoration-none" href="technologies.html#databricks" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);">
+                    <picture>
+                        <source srcset="assets/img/logo_databricks_wide_whitetext.svg 300w" media="(prefers-color-scheme: dark)">
+                        <source srcset="assets/img/logo_databricks_wide.svg 300w"><img src="" width="250px">
+                    </picture>
+                </a><a class="text-decoration-none" href="technologies.html#snowflake" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);"><img src="assets/img/logo_snowflake_small.png" width="250px"></a><a class="text-decoration-none" href="technologies.html#dataworld" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);"><img src="assets/img/logo_dataworld.png" width="250px"></a><a class="text-decoration-none" href="technologies.html#alation" style="margin: 0px 0px 25px 25px;backdrop-filter: grayscale(0%);">
+                    <picture>
+                        <source srcset="assets/img/alation_logo_white.png 908w" media="(prefers-color-scheme: dark)">
+                        <source srcset="assets/img/alation_logo.png 1000w"><img>
+                    </picture>
+                </a></div>
+        </div>
+        <section>
+            <div class="container">
+                <p><br><br></p>
+            </div>
+        </section>
+        <section class="py-4 py-xl-5">
+            <div class="container h-100">
+                <div class="card bg-dark-subtle border-light-subtle reveal fade-bottom">
+                    <div class="card-body hover-underline-animation riup">
+                        <div class="row">
+                            <div class="col-10 col-xl-10">
+                                <h1 style="font-size: 30px;font-weight: bold;text-align: left;color: #1c6ce8;">Data Management as a Service&nbsp;</h1>
+                            </div>
+                            <div class="col-2 col-xl-2 d-md-flex justify-content-end justify-content-md-end"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square fs-1 d-md-flex flex-row justify-content-end justify-content-md-end">
+                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"></path>
+                                </svg></div>
+                        </div>
+                        <hr><a class="text-decoration-none" href="https://www.estedic.nl/pricing.html">
+                            <h4 class="fs-4 text-muted"><strong>A scalable, flexible solution regardless of size or budget</strong></h4>
+                            <p class="fs-5 text-muted" style="font-size: 20px;">We recognize that not all companies can justify to have their own data management team. This can leave many businesses struggling to harness their data's full potential. That's precisely where Estedic steps in.<br><br>Our Data Management as a Service (DMaaS) offerings are designed to provide businesses of all sizes with expert data management solutions that adapt to their needs without the commitment of hiring a full-time specialist.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="container" style="border-left: 3px none #1c6ce8 ;">
             <div class="row">
-                <div class="col-md-6 riup hover-underline-animation" style="border-left: 2px none #1c6ce8;">
+                <div class="col-md-6 hover-underline-animation reveal fade-left" style="border-left: 2px none #1c6ce8;">
                     <hr>
                     <hr style="border-style: none;"><a class="text-decoration-none" href="technologies.html">
                         <h1 class="text-nowrap text-muted" style="font-size: 34px;font-weight: bold;">Technologies&nbsp;</h1>
                         <h4 class="fs-5 text-body-tertiary"><strong>The best-fit solutions for your success</strong></h4>
-                        <p class="fs-5 text-muted" style="font-size: 20px;">Estedic is a certified and registered consulting and system integration partner of Databricks&nbsp;and a registered partner of Snowflake.</p>
+                        <p class="fs-5 text-muted" style="font-size: 20px;">Estedic is a certified and registered consulting and system integration partner for Databricks, Snowflake and data.world.</p>
                     </a>
                 </div>
-                <div class="col-md-6 riup hover-underline-animation" style="border-left: 2px none #1c6ce8;">
+                <div class="col-md-6 hover-underline-animation reveal fade-right" style="border-left: 2px none #1c6ce8;">
                     <hr>
                     <hr style="border-style: none;"><a class="text-decoration-none" href="network.html">
                         <h1 class="text-nowrap text-muted" style="font-size: 34px;font-weight: bold;">Network</h1>
                         <h4 class="fs-5 text-body-tertiary"><strong>Together, we realize return on data and AI</strong></h4>
-                        <p class="fs-5 text-muted" style="font-size: 20px;">Together we stand strong. Through collaborations and partnerships, we amplify our impact.</p>
+                        <p class="fs-5 text-muted" style="font-size: 20px;">Bigger than the sum of its parts. Through collaborations and partnerships, we amplify our impact.</p>
                     </a>
                 </div>
-                <div class="col-md-6 riup hover-underline-animation" style="border-left: 2px none #1c6ce8;">
+                <div class="col-md-6 hover-underline-animation reveal fade-left" style="border-left: 2px none #1c6ce8;">
                     <hr>
                     <hr style="border-style: none;"><a class="text-decoration-none" href="industries.html#tab-industries">
                         <h1 class="text-nowrap text-muted" style="font-size: 34px;font-weight: bold;">Industries&nbsp;</h1>
@@ -291,7 +371,7 @@ We help realize return on data...</h1>
                         <p class="fs-5 text-muted" style="font-size: 20px;">Tackle typical industry challenges and learn about the fundamentals for achieving data and AI succes.</p>
                     </a>
                 </div>
-                <div class="col-md-6 riup hover-underline-animation" style="border-left: 2px none #1c6ce8;">
+                <div class="col-md-6 hover-underline-animation reveal fade-right" style="border-left: 2px none #1c6ce8;">
                     <hr>
                     <hr style="border-style: none;"><a class="text-decoration-none" href="work.html">
                         <h1 class="text-nowrap text-muted" style="font-size: 34px;font-weight: bold;">Work&nbsp;</h1>
@@ -301,6 +381,11 @@ We help realize return on data...</h1>
                 </div>
             </div>
         </div>
+        <section>
+            <div class="container">
+                <p><br><br><br></p>
+            </div>
+        </section>
         <hr style="border-style: none;">
         <div class="container" style="width: 100%;height: 50%;">
             <div data-bss-parallax-bg="true" style="height: 500px;background-image: url(&quot;assets/img/abstract_horizontal_lines.png&quot;);background-position: center;background-size: cover;">
@@ -319,8 +404,8 @@ We help realize return on data...</h1>
                 <h2 class="fw-bold mb-2" style="color: var(--bs-dark);font-weight: bold;"><span style="color: rgb(52, 58, 64);">Get started today</span></h2>
                 <p class="fs-5 mb-0" style="color: var(--bs-gray-800);">Schedule a free consultation to learn how we can help you realize return on your data...</p>
             </div>
-            <div class="my-2"><a class="btn btn-primary fs-5 py-2 px-4" role="button" id="getstartedcta-2" href="contact.html">Get started&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill" style="font-size: 19px;margin-bottom: 2px;">
-                        <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
+            <div class="my-2"><a class="btn btn-primary fs-5 border rounded py-2 px-4 riupwhite" role="button" id="getstartedcta-2" href="https://calendly.com/estedic/free-consultation" target="_blank">Get started&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill" style="font-size: 19px;margin-bottom: 2px;">
+                        <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"></path>
                     </svg></a></div>
         </div>
     </div>
@@ -368,31 +453,19 @@ We help realize return on data...</h1>
             </div>
             <hr>
             <div class="d-flex justify-content-between align-items-center pt-3">
-                <p class="text-muted mb-0">Copyright © 2023 Estedic B.V.</p>
+                <p class="text-muted mb-0">Copyright © 2024 Estedic B.V.</p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><a href="https://www.medium.com/estedic" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-medium" style="width: 24px;height: 24px;">
-                                <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"></path>
+                                <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"></path>
                             </svg></a></li>
                     <li class="list-inline-item" style="width: 24px;height: 24px;"><a href="https://github.com/estedic" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="width: 24px;height: 24px;">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
                             </svg></a></li>
                     <li class="list-inline-item" style="width: 24px;height: 24px;"><a href="https://www.linkedin.com/company/estedic/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin" style="width: 24px;height: 24px;">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"></path>
                             </svg></a></li>
                 </ul>
-            </div><script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '6579eab7aa6d10adcf7c60ea' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-</script>
+            </div>
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -409,6 +482,11 @@ We help realize return on data...</h1>
     <script src="assets/js/dataintelligenceclicks.js"></script>
     <script src="assets/js/datamanagementclicks.js"></script>
     <script src="assets/js/ml3.js"></script>
+    <script src="assets/js/alertstorage.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="assets/js/logoslider.js"></script>
+    <script src="assets/js/randommessage.js"></script>
+    <script src="assets/js/reveal.js"></script>
 </body>
 
 </html>
