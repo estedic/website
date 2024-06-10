@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const messages = [
 "<strong>New tool!</strong> Use generative AI to learn all about Estedic. 👉🏼 Click on the 'chat with us' button on the top right.",
-"🗓️ <strong>End of May:</strong> Stay tuned for our webinar in collaboration with data.world. 👉🏼 <a href='https://www.data.world' target='blank'; style='color: white;'>More on data.world</a>.",
+"🗓️ <strong>Stay tuned</strong> for our webinar in collaboration with data.world (final date t.b.d.). 👉🏼 <a href='https://www.data.world' target='blank'; style='color: white;'>More on data.world</a>.",
 "🗓️ <strong>June 27:</strong> Estedic will attend the Snowflake Benelux Partner Connect 2024 in Amsterdam. 👉🏼 <a href='https://www.snowflake.com' target='blank'; style='color: white;'>More on Snowflake</a>.",
         // ... add more messages as needed
     ];
