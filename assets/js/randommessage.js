@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const messages = [
-"<strong>New tool!</strong> Use generative AI to learn all about Estedic. 👉🏼 Click on the 'chat with us' button on the top right.",
+// "<strong>New tool!</strong> Use generative AI to learn all about Estedic. 👉🏼 Click on the 'chat with us' button on the top right.",
 "🗓️ <strong>Stay tuned</strong> for our webinar in collaboration with data.world (final date t.b.d.). 👉🏼 <a href='https://www.data.world' target='blank'; style='color: white;'>More on data.world</a>.",
         // ... add more messages as needed
     ];
